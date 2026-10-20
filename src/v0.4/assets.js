@@ -1,0 +1,9 @@
+window.FP_ASSETS={
+  cardMultimeter:'assets/asset-04.png',
+  cardWiring:'assets/asset-05.png',
+  cardDatasheet:'assets/asset-06.png',
+  cardSecond:'assets/asset-07.png',
+  lockout:'assets/asset-08.png',
+  maleL1:'assets/asset-01.png',maleL2:'assets/asset-09.png',maleL3:'assets/asset-10.png',
+  femaleL1:'assets/asset-02.png',femaleL2:'assets/asset-11.png'
+};
