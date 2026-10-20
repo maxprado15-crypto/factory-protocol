@@ -1,0 +1,21 @@
+{
+  "version": "0.4.1",
+  "title": "Scene & Card Systems Upgrade",
+  "supersedes": "0.4",
+  "missions": ["m1", "m2", "m3", "m4"],
+  "sceneProfiles": {
+    "m1": "S2 photoelectric sensor station",
+    "m2": "M3 motor and VFD overcurrent section",
+    "m3": "S4 optical packaging false-trigger section",
+    "m4": "A4 pneumatic pressure-drop and leak section"
+  },
+  "cardSystem": {
+    "chargesReset": "mission_start",
+    "backtrackRefundsCharges": false,
+    "effects": ["difficulty_reduction", "numeric_bonus", "contextual_evidence", "reroll", "hint", "time_cost"]
+  },
+  "saveNamespace": "fp-v041-*",
+  "migrationFallback": ["fp-v04-*", "fp-v031-*", "fp-v03-*", "fp-v02-*"],
+  "standaloneSha256": "87f9f5f776530eb87d27729acb8886819bacd38b80c5df6e10747b915dce9bc3",
+  "zipSha256": "956227f27e2fde7730dab6a1f495ae9cd340db515ef311debbd4c1f7c151ea19"
+}
