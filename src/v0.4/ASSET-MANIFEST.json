@@ -1,0 +1,18 @@
+{
+  "source": "Factory Protocol v0.4 approved standalone build",
+  "standalone_sha256": "a9d310c0e011d01a6751d4f9298c569a57c1c71df4d107b6bd5cb89c1fc7d2d2",
+  "assets": [
+    {"file":"asset-01.png","sha256":"c37563face0b6c14b69f0ed8b99053c8dde01d517a7e97b530fcc51a53675d21","bytes":222597},
+    {"file":"asset-02.png","sha256":"45fd0d57f1f755242d5e53f9cec9111b8ddc2da0c74f44d3dd33b1de217e5eb1","bytes":212839},
+    {"file":"asset-03.png","sha256":"9dbba46e228d819c990a6417dcecdff8eda94fc22bfd9f5500b019102613db57","bytes":566957},
+    {"file":"asset-04.png","sha256":"59b2bcc52ffee370cc73dd88ccef5b548b5b80e74f940d7825228b19b0d81afd","bytes":137075},
+    {"file":"asset-05.png","sha256":"9c05eb250270c7809908c2f464fb7ee4431ebb68cf101f6581d28de994deedf0","bytes":131667},
+    {"file":"asset-06.png","sha256":"55dbff96d2479531007e673f8752639cecc779870f4dcf76f0fe1f18bf9186c8","bytes":124423},
+    {"file":"asset-07.png","sha256":"ef29fa819738eb30ecb71c43902dccd9709d0dcfde8cf972c816256cc1c1bba6","bytes":135379},
+    {"file":"asset-08.png","sha256":"39eda9fa52529837e0966134f461597f1aded345171d3dd4b7ae01f413fa8764","bytes":158703},
+    {"file":"asset-09.png","sha256":"76379d2e84a2a341efdf611fabe3e9222047451e380867bf87f92dfe72614414","bytes":216757},
+    {"file":"asset-10.png","sha256":"9f8bf179da0eeafa70ac812dbaa42b2b14cfa2906e73de5bb8edccdbed2723c6","bytes":250826},
+    {"file":"asset-11.png","sha256":"db732e8d8b518d106e6205b955604ce6df1dff850328ddb4bab251a4565b3a3c","bytes":225064}
+  ],
+  "note": "The exact self-contained standalone release and binary image assets are additionally preserved in the ChatGPT Library under /Projetos/Factory Protocol/Releases/v0.4 and /Projetos/Factory Protocol/Art."
+}
