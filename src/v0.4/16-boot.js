@@ -1,0 +1,8 @@
+// ---------------------------- Boot -----------------------------------------
+function chooseAvatar(which){state.avatar=which;savePrefs();$$('.avatar-choice').forEach(x=>x.classList.toggle('selected',x.dataset.avatar===which));sfx('select');updateProfilePreview()}
+function updateProfilePreview(){$('#maleAvatar').classList.toggle('selected',state.avatar==='male');$('#femaleAvatar').classList.toggle('selected',state.avatar==='female')}
+function startGame(){ensureAudio();startAmbience();sfx('alarm');$('#bootScreen').classList.add('leaving');setTimeout(()=>{$('#bootScreen').classList.add('hidden');showCampaignHub();resizeCanvas()},650)}
+async function boot(){injectV03UI();updateProfilePreview();updateSoundButton();const lines=$$('.boot-line');for(const l of lines){await sleep(120);l.classList.add('on')}$('#startShift').disabled=false;$('#startShift').classList.add('ready')}
+
+$('#startShift').onclick=startGame;$('#soundToggle').onclick=toggleSound;$('#maleAvatar').onclick=()=>chooseAvatar('male');$('#femaleAvatar').onclick=()=>chooseAvatar('female');$('#resetProgress').onclick=()=>{if(confirm('Reset XP, mission completion, ratings and unlocked cards?')){state.xp=0;state.completedMissions={};state.bestRatings={};state.unlockedCards=['multimeter','wiring','sensor','lockout','reroll','senior'];state.deck=['multimeter','wiring','sensor','lockout'];state.reputation={safety:50,reliability:50,teamwork:50};savePrefs();updateProfile();if($('#campaignHub')?.classList.contains('open'))renderCampaignHub();feedback('Campaign progression reset.','info')}};
+window.addEventListener('resize',resizeCanvas);resizeCanvas();animateCanvas();boot();
