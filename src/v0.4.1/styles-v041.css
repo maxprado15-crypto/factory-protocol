@@ -1,0 +1,11 @@
+/* Factory Protocol v0.4.1 — scene identity + tactical card charges */
+.factory-bg{background-color:#07131b;background-repeat:no-repeat;background-size:cover;background-position:center;transition:background-image .22s ease,filter .22s ease}
+.scene.mission-m1 .factory-bg{filter:saturate(.9) contrast(1.08) brightness(.78)}
+.scene.mission-m2 .factory-bg{filter:saturate(.85) contrast(1.13) brightness(.76)}
+.scene.mission-m3 .factory-bg{filter:saturate(.92) contrast(1.08) brightness(.8)}
+.scene.mission-m4 .factory-bg{filter:saturate(.86) contrast(1.12) brightness(.78)}
+.scene.mission-m1 .sensor-beacon{left:54%;top:30%}.scene.mission-m2 .sensor-beacon{left:49%;top:54%;background:var(--amber);box-shadow:0 0 12px 5px var(--amber),0 0 42px 14px rgba(255,181,71,.28)}.scene.mission-m3 .sensor-beacon{left:19%;top:31%;background:var(--red)}.scene.mission-m4 .sensor-beacon{left:76%;top:42%;background:var(--red)}
+.scene.mission-m2 .sensor-ring{left:calc(49% - 15px);top:calc(54% - 15px)}.scene.mission-m3 .sensor-ring{left:calc(19% - 15px);top:calc(31% - 15px)}.scene.mission-m4 .sensor-ring{left:calc(76% - 15px);top:calc(42% - 15px)}
+.scene.mission-m3 .scene-badge{border-left-color:#37d9ff}.scene.mission-m4 .scene-badge{border-left-color:#ffb547}
+.card-charge{position:absolute;z-index:6;right:6px;top:6px;min-width:30px;text-align:center;background:rgba(3,10,14,.9);border:1px solid #568091;color:#e7f8ff;padding:4px 5px;font:900 8px/1 "Courier New",monospace;letter-spacing:.04em}.tool-card.selected .card-charge{top:31px;border-color:var(--cyan);color:var(--cyan)}
+.card-effect-panel{grid-column:1/-1;border:1px solid #285d70;background:linear-gradient(90deg,#081a24,#0b2029);padding:10px 12px;box-shadow:inset 3px 0 0 var(--cyan)}.card-effect-panel small{display:block;color:#6e9baa;font-size:7px;letter-spacing:.12em;font-weight:900}.card-effect-panel strong{display:block;color:#c8f2ff;margin-top:4px;font-size:10px;letter-spacing:.04em}.card-effect-panel p{margin:6px 0 0;color:#9eb5be;font:700 9px/1.45 "Courier New",monospace}.deck-card span:first-child{max-width:75%;line-height:1.25}
