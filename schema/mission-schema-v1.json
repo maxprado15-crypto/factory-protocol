@@ -1,0 +1,72 @@
+{
+  "$schemaName": "Factory Protocol Mission Schema",
+  "schemaVersion": "1.0",
+  "purpose": "Data contract for reusable educational RPG missions independent of the presentation engine.",
+  "mission": {
+    "id": "string",
+    "number": "string",
+    "title": "string",
+    "area": "string",
+    "archetype": "TROUBLESHOOTING | SAFETY | COMMUNICATION | MAINTENANCE | COMMISSIONING | OPTIMIZATION | mixed",
+    "description": "string",
+    "technicalObjective": "string",
+    "englishFocus": "string",
+    "recommendedLevel": "integer",
+    "npc": "string | null",
+    "focus": "string",
+    "statusFault": "string",
+    "statusOk": "string",
+    "baseReward": "integer",
+    "requires": "mission id | null",
+    "unlock": "card id | null",
+    "nodes": {
+      "nodeId": {
+        "type": "choice | quiz | check | end | failed",
+        "progress": "0..100",
+        "kicker": "string",
+        "speaker": "optional NPC label",
+        "title": "string",
+        "body": "string",
+        "scene": "optional visual scene-state key",
+        "next": "optional node id",
+        "opts": "type-specific options"
+      }
+    }
+  },
+  "choiceOption": {
+    "label": "string",
+    "sub": "string",
+    "quality": "good | plausible | bad | unsafe",
+    "decision": "D20 modifier",
+    "tech": "technical score modifier",
+    "next": "node id",
+    "scene": "visual reaction key",
+    "reaction": "result headline",
+    "result": "consequence text",
+    "impact": {
+      "efficiency": "optional integer",
+      "safety": "optional integer",
+      "production": "optional integer",
+      "time": "optional minutes",
+      "xp": "optional mission-XP delta",
+      "repSafety": "optional persistent reputation delta",
+      "repReliability": "optional persistent reputation delta",
+      "repTeamwork": "optional persistent reputation delta"
+    }
+  },
+  "quizNode": {
+    "correct": "zero-based option index",
+    "bonus": "temporary English modifier",
+    "opts": [
+      ["answer text", "contextual feedback"]
+    ]
+  },
+  "checkNode": {
+    "attr": "base technical modifier",
+    "diff": "D20 target",
+    "tags": ["card compatibility tags"],
+    "hint": "support-card clue",
+    "success": "success consequence",
+    "fail": "fail-forward consequence"
+  }
+}
