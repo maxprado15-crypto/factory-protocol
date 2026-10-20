@@ -1,0 +1,4 @@
+// -------------------------- Ambient canvas ---------------------------------
+const canvas=$('#ambientCanvas'), ctx=canvas.getContext('2d');let particles=[];
+function resizeCanvas(){const r=canvas.getBoundingClientRect();const d=Math.min(2,devicePixelRatio||1);canvas.width=r.width*d;canvas.height=r.height*d;ctx.setTransform(d,0,0,d,0,0);particles=Array.from({length:26},()=>({x:Math.random()*r.width,y:Math.random()*r.height,s:.3+Math.random()*1.4,v:.08+Math.random()*.25,a:.08+Math.random()*.24}))}
+function animateCanvas(){const r=canvas.getBoundingClientRect();ctx.clearRect(0,0,r.width,r.height);particles.forEach(p=>{p.x+=p.v;p.y-=p.v*.13;if(p.x>r.width+5){p.x=-5;p.y=Math.random()*r.height}if(p.y<-5)p.y=r.height+5;ctx.fillStyle=`rgba(55,217,255,${p.a})`;ctx.fillRect(p.x,p.y,p.s*2.2,p.s)});requestAnimationFrame(animateCanvas)}
