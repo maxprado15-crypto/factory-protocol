@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 420">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#07131c"/><stop offset=".55" stop-color="#17242b"/><stop offset="1" stop-color="#05080c"/></linearGradient>
+ <linearGradient id="metal" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#50616a"/><stop offset=".48" stop-color="#18262d"/><stop offset="1" stop-color="#0a1115"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+ <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse"><path d="M36 0H0V36" fill="none" stroke="#1d3540" stroke-width="1"/></pattern>
+</defs>
+<rect width="940" height="420" fill="url(#bg)"/><rect width="940" height="420" fill="url(#grid)" opacity=".45"/>
+<path d="M0 336H940" stroke="#344a55" stroke-width="7"/><path d="M0 360H940" stroke="#111b20" stroke-width="42"/>
+<g opacity=".55" fill="#0d1a21" stroke="#28404c"><rect x="40" y="65" width="250" height="220" rx="4"/><rect x="660" y="54" width="220" height="245" rx="4"/></g>
+<g transform="translate(95 100)"><rect width="150" height="140" rx="4" fill="#091117" stroke="#2d5668" stroke-width="2"/><text x="18" y="27" fill="#77dffc" font-family="monospace" font-size="14">VFD M3</text><rect x="18" y="45" width="114" height="48" fill="#031016" stroke="#28738d"/><text x="31" y="75" fill="#ffb547" font-family="monospace" font-size="18">OVERCURRENT</text><circle cx="32" cy="114" r="8" fill="#ff4f58" filter="url(#glow)"/><circle cx="65" cy="114" r="8" fill="#52e39d"/></g>
+<g transform="translate(345 147)"><rect x="0" y="42" width="295" height="100" rx="48" fill="url(#metal)" stroke="#71868f" stroke-width="3"/><ellipse cx="38" cy="92" rx="46" ry="54" fill="#15242b" stroke="#8aa0a8" stroke-width="3"/><circle cx="38" cy="92" r="17" fill="#090e12" stroke="#ffb547" stroke-width="3"/><path d="M91 42v100M125 42v100M159 42v100M193 42v100M227 42v100" stroke="#3c515a" stroke-width="7"/><rect x="278" y="61" width="42" height="62" rx="5" fill="#101b24" stroke="#6a7c84"/><text x="111" y="99" fill="#dbeaf0" font-family="monospace" font-size="24" font-weight="700">MOTOR M3</text><text x="112" y="124" fill="#ffb547" font-family="monospace" font-size="14">LOAD CURRENT HIGH</text></g>
+<g transform="translate(678 90)"><rect width="162" height="150" rx="5" fill="#07131a" stroke="#2b5364" stroke-width="2"/><text x="16" y="29" fill="#7ee6ff" font-family="monospace" font-size="13">CURRENT TREND</text><path d="M16 115 L38 111 55 105 73 95 90 86 106 65 124 48 143 30" fill="none" stroke="#ff4f58" stroke-width="4"/><path d="M16 120H145M16 45V120" stroke="#335464"/><text x="18" y="141" fill="#859ca6" font-family="monospace" font-size="10">UNDER LOAD</text></g>
+<g opacity=".7"><path d="M310 300H690" stroke="#758790" stroke-width="8"/><circle cx="360" cy="300" r="28" fill="#19282f" stroke="#70838c" stroke-width="4"/><circle cx="500" cy="300" r="28" fill="#19282f" stroke="#70838c" stroke-width="4"/><circle cx="640" cy="300" r="28" fill="#19282f" stroke="#70838c" stroke-width="4"/></g>
+<text x="28" y="395" fill="#6e8792" font-family="monospace" font-size="12">PACKAGING LINE · DRIVE SECTION</text>
+</svg>
