@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0",
+  "campaign": "Factory Protocol — Industrial Automation",
+  "missions": [
+    {
+      "id": "m1",
+      "number": "001",
+      "title": "NO SIGNAL",
+      "archetype": "TROUBLESHOOTING",
+      "technicalObjective": "Diagnose a missing photoelectric sensor signal.",
+      "englishFocus": "Maintenance logs · fault descriptions"
+    },
+    {
+      "id": "m2",
+      "number": "002",
+      "title": "OVERCURRENT",
+      "archetype": "TROUBLESHOOTING",
+      "technicalObjective": "Separate electrical symptoms from mechanical overload.",
+      "englishFocus": "Measurements · cause and effect"
+    },
+    {
+      "id": "m3",
+      "number": "003",
+      "title": "FALSE TRIGGER",
+      "archetype": "TROUBLESHOOTING + COMMUNICATION",
+      "technicalObjective": "Diagnose optical interference and validate sensor calibration.",
+      "englishFocus": "Operator interview · inference · technical reporting",
+      "npc": "Operator Lena"
+    },
+    {
+      "id": "m4",
+      "number": "004",
+      "title": "PRESSURE DROP",
+      "archetype": "SAFETY + TROUBLESHOOTING",
+      "technicalObjective": "Locate a local pneumatic leak and repair it safely.",
+      "englishFocus": "Operator clues · safety language · maintenance reporting",
+      "npc": "Operator Marco"
+    }
+  ]
+}
