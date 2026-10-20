@@ -1,8 +1,8 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#05080c"><title>Factory Protocol v0.4</title><link rel="stylesheet" href="style.css"></head><body>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#05080c"><title>Factory Protocol v0.4</title><link rel="stylesheet" href="styles-core.css"><link rel="stylesheet" href="styles-overlays.css"><link rel="stylesheet" href="styles-campaign.css"></head><body>
 <div id="bootScreen" class="boot-screen"><div class="boot-box">
-  <div class="brand-lockup"><div><div class="brand-title">FACTORY<br>PROTOCOL</div><div class="brand-sub">INDUSTRIAL AUTOMATION RPG</div></div><div class="brand-code">FP/CORE 0.3.1<br>TRAINING ENVIRONMENT<br>LINE NETWORK: 03</div></div>
+  <div class="brand-lockup"><div><div class="brand-title">FACTORY<br>PROTOCOL</div><div class="brand-sub">INDUSTRIAL AUTOMATION RPG</div></div><div class="brand-code">FP/CORE 0.4<br>TRAINING ENVIRONMENT<br>LINE NETWORK: 03</div></div>
   <div class="boot-grid"><div class="boot-console">
-    <div class="boot-line"><span>PLC NETWORK</span><b>ONLINE</b></div><div class="boot-line"><span>SAFETY SYSTEM</span><b>ONLINE</b></div><div class="boot-line"><span>LINE 01</span><b>ONLINE</b></div><div class="boot-line"><span>LINE 02</span><b>ONLINE</b></div><div class="boot-line fault"><span>LINE 03</span><b>FAULT</b></div><div class="boot-line"><span>CAMPAIGN PACKAGE</span><b>2 MISSIONS</b></div>
+    <div class="boot-line"><span>PLC NETWORK</span><b>ONLINE</b></div><div class="boot-line"><span>SAFETY SYSTEM</span><b>ONLINE</b></div><div class="boot-line"><span>LINE 01</span><b>ONLINE</b></div><div class="boot-line"><span>LINE 02</span><b>ONLINE</b></div><div class="boot-line fault"><span>LINE 03</span><b>FAULT</b></div><div class="boot-line"><span>CAMPAIGN PACKAGE</span><b>4 MISSIONS</b></div>
   </div><div class="avatar-picker"><div class="picker-title">SELECT TECHNICIAN AVATAR</div><div class="avatar-row"><button id="maleAvatar" data-avatar="male" class="avatar-choice"><img src="assets/asset-01.png"><span>MALE TECHNICIAN</span></button><button id="femaleAvatar" data-avatar="female" class="avatar-choice"><img src="assets/asset-02.png"><span>FEMALE TECHNICIAN</span></button></div></div></div>
   <div class="boot-actions"><div class="mini-note">Career progression is gradual: levels and job rank are separate from mission/card unlocks. Trainee LV.1–2 · Junior LV.3–4 · Technician LV.5–7 · Senior LV.8–10 · Specialist LV.11–14 · Lead LV.15+.</div><button id="startShift" class="start-shift" disabled>START SHIFT</button></div>
 </div></div>
@@ -22,4 +22,20 @@
 <div id="feedbackToast" class="feedback-toast"></div>
 <div id="diceModal" class="dice-modal"><div class="dice-box"><div class="dice-label">DIAGNOSTIC CHECK</div><div id="diceResult" class="dice-core">D20</div><div id="diceBreakdown" class="dice-breakdown"></div><div id="diceTotal" class="dice-total"></div><div id="diceOutcome" class="dice-outcome"></div></div></div>
 <div id="rewardOverlay" class="reward-overlay"><div class="reward-box"><div id="rewardTitle" class="reward-title">PRODUCTION RESTORED</div><div id="rewardXp" class="reward-xp">+120 XP</div><div id="unlockCard" class="unlock-card"><div><small>NEW CARD UNLOCKED</small><strong>PRECISION ALIGNMENT</strong><span>+2 on alignment and calibration checks.</span></div></div></div></div>
-<script src="assets.js"></script><script src="game.js"></script></body></html>
+<script src="assets.js"></script>
+<script src="01-base.js"></script>
+<script src="02-mission1.js"></script>
+<script src="03-mission2.js"></script>
+<script src="04-mission3.js"></script>
+<script src="05-mission4.js"></script>
+<script src="06-state-model.js"></script>
+<script src="07-audio.js"></script>
+<script src="08-ui-injection.js"></script>
+<script src="09-campaign-hub.js"></script>
+<script src="10-ambient.js"></script>
+<script src="11-state-runtime.js"></script>
+<script src="12-scene-reactions.js"></script>
+<script src="13-rendering.js"></script>
+<script src="14-log-backtrack.js"></script>
+<script src="15-end-states.js"></script>
+<script src="16-boot.js"></script></body></html>
