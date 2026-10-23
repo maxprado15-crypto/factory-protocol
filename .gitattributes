@@ -1,0 +1,3 @@
+# Release artifacts are byte-preserved, including the approved v0.5 baseline.
+releases/**/*.html -text
+releases/**/*.zip -text

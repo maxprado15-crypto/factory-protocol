@@ -40,3 +40,16 @@ v0.5 / Chapter One expansion:
 - more meaningful deck strategy
 - more avatar/career art stages
 - continued playtest and balance work
+
+
+## 2026-10-23 — v0.5.1 approved scope / implementation decisions
+
+- Supersedes the historical development baseline above; derive v0.5.1 from approved v0.5 and preserve both v0.5 and v0.5-beta1.
+- A deck may contain zero to four cards; only the maximum is enforced. LIMITED LOADOUT is advisory. Unlocks require explicit player selection.
+- Resource evidence requires actual use, including a charge; previews reveal no results. Ownership, carrying and use are separate checks. Locked or exhausted resources remain unavailable.
+- Use explicit per-check toolEvidence contracts, independent of generic tag bonuses. Reference, support, safety, reroll and high D20 results never substitute for a measuring instrument.
+- Preserve existing HMI/VFD/log readings with source labels; physical readings and newly derived instrument/reference data require the corresponding resource.
+- Distinguish visual evidence and hypotheses from measured confirmation throughout choices, quizzes, results, reports, review/log and scene labels in all six missions.
+- Longer alternatives add seven manual nodes and downtime. S6 gains visible retained connector service marks for its no-diagram route; isolated tube removal can reveal visible damage without claiming active small-leak localization. Authorized site isolation services handle access if the player lacks the required absence-of-voltage instrument.
+- Keep the D20 formula, charges, support costs, Second Check, mission/card unlock order, XP ladder, reputation and non-undo backtracking. Correct the inherited audio-save namespace bug while isolating all writes to fp-v051-*.
+- Archive the exact approved v0.5 standalone alongside the new release for reproducible builds. Do not modify earlier release files or image payloads. Validate graph targets and executable no-card/resource paths in the built standalone.

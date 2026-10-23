@@ -1,0 +1,13 @@
+{
+  "version": "0.5.1",
+  "baseline": "approved v0.5 standalone from ChatGPT Library",
+  "baselineSha256": "5eea355c892e08ff970d4d9c53f315123afe475bd00ac83e0b44db20469e4c11",
+  "standaloneSha256": "615dfe1f82723c4f90cc5918797e07ce5c807605b2047199ed15d5bf5232a2d1",
+  "missions": 6,
+  "deck": {
+    "min": 0,
+    "max": 4
+  },
+  "saveNamespace": "fp-v051-*",
+  "migration": "Read-only fallback from fp-v05-* and older stable saves; beta namespace untouched."
+}
